@@ -1,0 +1,97 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Music Player</title>
+        <link rel="stylesheet" href="./index.css">
+        <script src="https://kit.fontawesome.com/651b793911.js" crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <main>
+            <div id="main-div">
+                <div id="main-section">
+                    <audio id="player">
+                        <source id="music-source" src="https://edyoda.s3.ap-south-1.amazonaws.com/public/musicfiles/without-you.mp3"></source>
+                    </audio>
+                    <img id="album-cover" src="https://m.media-amazon.com/images/I/81mNRm3F6KL._SS500_.jpg" alt="album-cover">
+                    <div id="progress-wrapper">
+                        <div id="progress"></div>
+                    </div>
+                    <div id="player-button-wrapper">
+                        <button id="suffle-btn" class="player-btn"><i class="fas fa-random"></i></button>
+                        <button id="previous-btn" class="player-btn"><i class="fas fa-step-backward"></i></button>
+                        <button id="play-btn" class="player-btn show"><i class="far fa-play-circle"></i></button>
+                        <!-- whenever you autoplay player change the icon  -->
+                        <button id="pause-btn" class="player-btn hide"><i id="pauseIcon" class="far fa-pause-circle"></i></button>
+                        <button id="forward-btn" class="player-btn"><i class="fas fa-step-forward"></i></button>
+                        <button id="replay-btn" class="player-btn"><i class="fas fa-reply-all"></i></button>
+                    </div>
+                    <h2 id="album-title">Without You</h2>
+                    <h3 id="artist">Avicii</h3>
+                </div>
+                <div id="playlist-section">
+                    <!-- <div class="playlist-item">
+                        <img class="playlist-item-img" src="https://m.media-amazon.com/images/I/81mNRm3F6KL._SS500_.jpg" alt="without-you">
+                        <div class="playlist-item-list">
+                            <p class="playlist-item-title">Without You</p>
+                            <p class="playlist-item-artist">Avicii</p>
+                        </div>
+                    </div>
+                    <div class="playlist-item">
+                        <img class="playlist-item-img" src="https://m.media-amazon.com/images/I/81mNRm3F6KL._SS500_.jpg" alt="without-you">
+                        <div class="playlist-item-list">
+                            <p class="playlist-item-title">Without You</p>
+                            <p class="playlist-item-artist">Avicii</p>
+                        </div>
+                    </div>
+                    <div class="playlist-item">
+                        <img class="playlist-item-img" src="https://m.media-amazon.com/images/I/81mNRm3F6KL._SS500_.jpg" alt="without-you">
+                        <div class="playlist-item-list">
+                            <p class="playlist-item-title">Without You</p>
+                            <p class="playlist-item-artist">Avicii</p>
+                        </div>
+                    </div>
+                    <div class="playlist-item">
+                        <img class="playlist-item-img" src="https://m.media-amazon.com/images/I/81mNRm3F6KL._SS500_.jpg" alt="without-you">
+                        <div class="playlist-item-list">
+                            <p class="playlist-item-title">Without You</p>
+                            <p class="playlist-item-artist">Avicii</p>
+                        </div>
+                    </div>
+                    <div class="playlist-item">
+                        <img class="playlist-item-img" src="https://m.media-amazon.com/images/I/81mNRm3F6KL._SS500_.jpg" alt="without-you">
+                        <div class="playlist-item-list">
+                            <p class="playlist-item-title">Without You</p>
+                            <p class="playlist-item-artist">Avicii</p>
+                        </div>
+                    </div>
+                    <div class="playlist-item">
+                        <img class="playlist-item-img" src="https://m.media-amazon.com/images/I/81mNRm3F6KL._SS500_.jpg" alt="without-you">
+                        <div class="playlist-item-list">
+                            <p class="playlist-item-title">Without You</p>
+                            <p class="playlist-item-artist">Avicii</p>
+                        </div>
+                    </div>
+                    <div class="playlist-item">
+                        <img class="playlist-item-img" src="https://m.media-amazon.com/images/I/81mNRm3F6KL._SS500_.jpg" alt="without-you">
+                        <div class="playlist-item-list">
+                            <p class="playlist-item-title">Without You</p>
+                            <p class="playlist-item-artist">Avicii</p>
+                        </div>
+                    </div>
+                    <div class="playlist-item">
+                        <img class="playlist-item-img" src="https://m.media-amazon.com/images/I/81mNRm3F6KL._SS500_.jpg" alt="without-you">
+                        <div class="playlist-item-list">
+                            <p class="playlist-item-title">Without You</p>
+                            <p class="playlist-item-artist">Avicii</p>
+                        </div>
+                    </div> -->
+                </div>
+            </div>
+        </main>
+        <script src="./index.js"></script>
+    </body>
+    </html>
